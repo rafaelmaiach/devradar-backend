@@ -1,0 +1,30 @@
+{
+  "ENV": {
+    "type": "object",
+    "required": [
+      "NODE_ENV",
+      "DB_HOST",
+      "DB_USER",
+      "DB_PASS"
+    ],
+    "properties": {
+      "NODE_ENV": {
+        "type": "string",
+        "enum": [
+          "development",
+          "production"
+        ]
+      },
+      "DB_HOST": {
+        "type": "string"
+      },
+      "DB_USER": {
+        "type": "string"
+      },
+      "DB_PASS": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": true
+  }
+}
