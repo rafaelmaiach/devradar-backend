@@ -5,7 +5,8 @@
       "NODE_ENV",
       "DB_HOST",
       "DB_USER",
-      "DB_PASS"
+      "DB_PASS",
+      "CERT_PASS"
     ],
     "properties": {
       "NODE_ENV": {
@@ -22,6 +23,9 @@
         "type": "string"
       },
       "DB_PASS": {
+        "type": "string"
+      },
+      "CERT_PASS": {
         "type": "string"
       }
     },

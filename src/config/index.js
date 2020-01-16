@@ -25,6 +25,7 @@ const config = {
     user: env.DB_USER,
     password: env.DB_PASS,
   },
+  certPass: env.CERT_PASS,
 };
 
 module.exports = Object.freeze(config);
