@@ -12,7 +12,7 @@ module.exports = {
 
   async store(req, res) {
     const {
-      githubUsername,
+      github_username: githubUsername,
       techs,
       latitude,
       longitude,
