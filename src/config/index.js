@@ -26,6 +26,7 @@ const config = {
     password: env.DB_PASS,
   },
   certPass: env.CERT_PASS,
+  sslEnabled: env.SSL_ENABLED === 'true',
 };
 
 module.exports = Object.freeze(config);

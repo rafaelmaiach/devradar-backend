@@ -6,7 +6,7 @@
       "DB_HOST",
       "DB_USER",
       "DB_PASS",
-      "CERT_PASS"
+      "SSL_ENABLED"
     ],
     "properties": {
       "NODE_ENV": {
@@ -27,6 +27,13 @@
       },
       "CERT_PASS": {
         "type": "string"
+      },
+      "SSL_ENABLED": {
+        "type": "string",
+        "enum": [
+          "true",
+          "false"
+        ]
       }
     },
     "additionalProperties": true
