@@ -6,6 +6,7 @@ const cors = require('cors');
 
 const config = require('./config');
 
+const { setupWebSocket } = require('./websocket');
 const routes = require('./routes');
 const database = require('./database');
 
@@ -37,4 +38,5 @@ app.use(routes);
 
 const server = sslEnabled ? https.createServer(credentials, app) : http.createServer(app);
 
+setupWebSocket(server);
 server.listen(3333);
