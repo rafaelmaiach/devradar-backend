@@ -10,7 +10,7 @@ const { setupWebSocket } = require('./websocket');
 const routes = require('./routes');
 const database = require('./database');
 
-const { sslEnabled } = config;
+const { sslEnabled, port } = config;
 let credentials;
 
 if (sslEnabled) {
@@ -39,4 +39,4 @@ app.use(routes);
 const server = sslEnabled ? https.createServer(credentials, app) : http.createServer(app);
 
 setupWebSocket(server);
-server.listen(3333);
+server.listen(port, () => console.log(`Running on port ${port}`));

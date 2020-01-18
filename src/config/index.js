@@ -19,6 +19,7 @@ if (!isEnvValid.isValid) {
 
 const config = {
   env: env.NODE_ENV,
+  port: env.PORT || 3333,
   isProduction: env.NODE_ENV === 'production',
   database: {
     host: env.DB_HOST,
